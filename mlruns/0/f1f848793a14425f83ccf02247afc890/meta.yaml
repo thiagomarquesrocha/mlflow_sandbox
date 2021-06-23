@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/0/f1f848793a14425f83ccf02247afc890/artifacts
+end_time: 1624478272635
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: f1f848793a14425f83ccf02247afc890
+run_uuid: f1f848793a14425f83ccf02247afc890
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1624478272302
+status: 3
+tags: []
+user_id: Thiago
