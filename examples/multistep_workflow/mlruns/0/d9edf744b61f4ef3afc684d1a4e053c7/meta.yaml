@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/PythonProjects/mlflow_sandbox/examples/multistep_workflow/mlruns/0/d9edf744b61f4ef3afc684d1a4e053c7/artifacts
+end_time: 1624493285132
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: d9edf744b61f4ef3afc684d1a4e053c7
+run_uuid: d9edf744b61f4ef3afc684d1a4e053c7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1624493265758
+status: 3
+tags: []
+user_id: Thiago
