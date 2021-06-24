@@ -3,5 +3,7 @@ name: multistep_example
 conda_env: conda.yaml
 
 entry_points:
+    load_raw_data:
+        command: "python load_raw_data.py"
     main:
         command: "python main.py"

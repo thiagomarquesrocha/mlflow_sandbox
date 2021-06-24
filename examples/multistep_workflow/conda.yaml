@@ -10,4 +10,5 @@ dependencies:
     - mlflow>=1.0
     - pyspark
     - requests
+    - googledrivedownloader
     - click

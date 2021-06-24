@@ -1,6 +1,7 @@
 from mlflow import log_metric, log_param, log_artifacts
 import click
 import mlflow
+import os
 from mlflow.utils import mlflow_tags
 from mlflow.entities import RunStatus
 from mlflow.utils.logging_utils import eprint
@@ -68,6 +69,11 @@ def workflow():
     # Note: The entrypoint names are defined in MLproject. The artifact directories
     # are documented by each step's .py file.
     with mlflow.start_run() as active_run:
+        git_commit = active_run.data.tags.get(mlflow_tags.MLFLOW_GIT_COMMIT)
+        load_raw_data_run = _get_or_run("load_raw_data", {}, git_commit)
+        ratings_csv_uri = os.path.join(load_raw_data_run.info.artifact_uri, "ratings-csv-dir")
+        eprint("URI raw_data=%s" % (ratings_csv_uri))
+        
         eprint("workflow running on MLflow")
 
 if __name__ == "__main__":
